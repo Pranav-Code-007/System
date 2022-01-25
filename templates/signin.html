@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signin</title>
+</head>
+<body>
+<form action="{{ url_for('signin') }}" method="post">
+<h2></h2>
+    email:<br>
+<input type="email" name="email" minlength="10" required><br>
+password:<br>
+<input type="password" name="passwd" minlength="8" required><br>
+<input type="submit" value="Login">
+</form>
+<h1>{{info}}</h1>
+</body>
+</html>

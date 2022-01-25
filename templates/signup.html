@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signup</title>
+</head>
+<body>
+<form action="{{ url_for('signup') }}" method="post">
+<h2></h2>
+    Name:<br>
+<input type="text" name="firstname" minlength="3" maxlength="20" required><br>
+Last Name:<br>
+<input type="text" name="lastname" minlength="3" maxlength="20" required><br>
+number:<br>
+<input type="tel" name="number" minlength="10" maxlength="10" required><br>
+email:<br>
+<input type="email" name="email" minlength="8" maxlength="50" required><br>
+password:<br>
+<input type="password" name="passwd" minlength="8" required><br>
+<input type="submit" value="Create">
+</form>
+<h1>{{info}}</h1>
+</body>
+</html>
